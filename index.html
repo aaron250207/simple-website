@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Stock Management System</title>
+</head>
+<body>
+  <section id="introSection">
+    <h1>Welcome to the Stock Management System</h1>
+    <button id="startButton">Get Started</button>
+  </section>
+
+  <section id="loginSection" class="hidden">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+      <button type="submit">Login</button>
+    </form>
+  </section>
+
+  <section id="dashboardSection" class="hidden">
+    <h2>Welcome to the Dashboard!</h2>
+    <p>Total Earnings: $<span id="totalEarnings">0.00</span></p>
+    <p>Total Loan: $<span id="totalLoan">0.00</span></p>
+    <button id="logoutButton">Logout</button>
+    <button id="stocksButton">My Stocks</button>
+  </section>
+
+  <section id="stocksSection" class="hidden">
+    <h2>My Stocks</h2>
+    <button id="stocksBackButton">Back</button>
+    <form id="stocksForm">
+      <label for="itemName">Item Name:</label>
+      <input type="text" id="itemName" required>
+      <label for="itemPrice">Price:</label>
+      <input type="number" id="itemPrice" step="0.01" required>
+      <label for="customerName">Customer Name:</label>
+      <div class="customer-container">
+        <input type="text" id="customerName" required>
+      </div>
+      <input type="checkbox" id="paidCheckbox">
+      <button id="addItemButton">Add Item</button>
+    </form>
+    <ul id="stocksList"></ul>
+    <button id="clearItemsButton">Clear Items</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

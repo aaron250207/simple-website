@@ -1,0 +1,103 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #457066;
+  color: #333;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: blue;
+}
+
+.hidden {
+  display: none;
+}
+
+#introSection {
+  padding: 5px;
+  text-align: center;
+  background-color:white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#loginSection {
+  padding: 100px;
+  margin: 100px auto;
+  max-width: 300px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#dashboardSection {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 300px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#stocksSection {
+  padding: 20px;
+  margin: 50px 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#stocksList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#stocksForm label,
+#stocksSection h2,
+#stocksBackButton {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#stocksSection h2 {
+  font-size: 24px;
+}
+
+#stocksBackButton {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#stocksBackButton:hover {
+  background-color: blue;
+}
+
+.paid {
+  background-color: lightgreen;
+}
+
+.loaned {
+  background-color: red;
+  color: white;
+}
